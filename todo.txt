@@ -1,0 +1,4 @@
+feature: SCORE
+
+1. Display the score on the screen.
+2. Update the score.
