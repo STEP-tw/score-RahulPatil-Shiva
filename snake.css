@@ -12,6 +12,11 @@
   height: 8px;
 }
 
+#score {
+  margin-left: 500px;
+  font-size: 80px;
+}
+
 .snake {
   background-color: black;
 }
