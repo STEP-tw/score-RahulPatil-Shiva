@@ -43,7 +43,6 @@ const drawFood=function(food) {
   paintCell(food.getPosition(),"food");
 }
 
-const updateScoreBy=function(value){
-  let score=game.updateScore(value);
+const showScore=function(score){
   document.querySelector('#score').innerText=`Score is: ${score}`;
 }

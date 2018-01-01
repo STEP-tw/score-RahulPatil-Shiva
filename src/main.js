@@ -4,7 +4,6 @@ let numberOfRows=60;
 let numberOfCols=120;
 let animator=undefined;
 
-
 const animateSnake=function() {
   let details=game.move();
   paintBody(details.oldHead);
@@ -12,7 +11,7 @@ const animateSnake=function() {
   paintHead(details.head);
   if(game.hasSnakeEatenFood()) {
     game.grow();
-    updateScoreBy(10);
+    showScore(game.updateScore(10));
     game.createFood();
     drawFood(game.getFood());
   }
