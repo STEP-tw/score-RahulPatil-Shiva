@@ -42,3 +42,8 @@ const drawFood=function(food) {
   else
   paintCell(food.getPosition(),"food");
 }
+
+const updateScoreBy=function(value){
+  let score=game.updateScore(value);
+  document.querySelector('#score').innerText=`Score is: ${score}`;
+}

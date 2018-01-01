@@ -4,10 +4,6 @@ let numberOfRows=60;
 let numberOfCols=120;
 let animator=undefined;
 
-const updateScore=function(){
-  let score=game.updateScore();
-  document.querySelector('#score').innerText=`Score is: ${score}`;
-}
 
 const animateSnake=function() {
   let details=game.move();
@@ -16,7 +12,7 @@ const animateSnake=function() {
   paintHead(details.head);
   if(game.hasSnakeEatenFood()) {
     game.grow();
-    updateScore();
+    updateScoreBy(10);
     game.createFood();
     drawFood(game.getFood());
   }
